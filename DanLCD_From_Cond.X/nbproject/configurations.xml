@@ -17,9 +17,27 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.c</itemPath>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="drivers" displayName="drivers" projectFiles="true">
+          <itemPath>src/drivers/buttons.c</itemPath>
+          <itemPath>src/drivers/ht1621.c</itemPath>
+          <itemPath>src/drivers/board.h</itemPath>
+          <itemPath>src/drivers/buttons.h</itemPath>
+          <itemPath>src/drivers/ht1621.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="middleware" displayName="middleware" projectFiles="true">
+          <itemPath>src/middleware/button_service.c</itemPath>
+          <itemPath>src/middleware/button_service.h</itemPath>
+          <itemPath>src/middleware/lcd_display.h</itemPath>
+          <itemPath>src/middleware/lcd_display.c</itemPath>
+        </logicalFolder>
+        <itemPath>src/main.c</itemPath>
+      </logicalFolder>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">

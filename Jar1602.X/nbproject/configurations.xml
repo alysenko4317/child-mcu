@@ -17,9 +17,31 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.c</itemPath>
+      <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+        <itemPath>src/bsp/board.h</itemPath>
+        <itemPath>src/bsp/mcu_init.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="drivers" displayName="drivers" projectFiles="true">
+        <itemPath>src/drivers/ht1621.c</itemPath>
+        <itemPath>src/drivers/ht1621.h</itemPath>
+        <itemPath>src/drivers/lcd1602.c</itemPath>
+        <itemPath>src/drivers/lcd1602.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="middleware" displayName="middleware" projectFiles="true">
+        <itemPath>src/middleware/button_service.c</itemPath>
+        <itemPath>src/middleware/button_service.h</itemPath>
+        <itemPath>src/middleware/inactivity_service.c</itemPath>
+        <itemPath>src/middleware/inactivity_service.h</itemPath>
+        <itemPath>src/middleware/lcd1602_service.c</itemPath>
+        <itemPath>src/middleware/lcd1602_service.h</itemPath>
+        <itemPath>src/middleware/lcd1621_service.c</itemPath>
+      </logicalFolder>
+      <itemPath>src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
